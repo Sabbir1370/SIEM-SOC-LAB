@@ -12,8 +12,10 @@ PuTTY is used to remotely access the Ubuntu Server VM via SSH.
 ### Installation (Parrot OS)
 	sudo apt update
 	sudo apt install putty -y
-![[puttyinstall.png]]
-![[puttyinstall.png]]
+
+![](screenshoot/puttyinstall.png)
+![](screenshoot/puttyinstall.png)
+
 ### Purpose
 - Enables secure remote connection to the Ubuntu Server
 - Used for command-line administration of the VM
@@ -32,7 +34,9 @@ A Virtual Machine is used to simulate a server environment for the SIEM setup.
 - RAM: [4GB]
 - Storage: [30GB]
 - Network Mode: Bridged Adapter
-![[configure.png]]
+
+![](screenshoot/configure.png)
+
 ### Purpose
 - Provides isolated environment for SIEM deployment
 - Simulates real-world server infrastructure
@@ -50,14 +54,18 @@ SSH is required for remote access via PuTTY.
 
 ### Verify SSH Status
 	sudo systemctl status ssh
-![[sshinstall.png]]
+
+![](screenshoot/sshinstall.png)
+
 ---
 
 ## Step 4: Find VM IP Address
 	
 	ip a
-![[ip.png]]
-![[ip.png]]
+
+![](screenshoot/ip.png)
+![](screenshoot/ip.png)
+
 Example:
 172.30.31.150
 
@@ -71,12 +79,14 @@ This IP is used for PuTTY connection.
 - Host Name: VM IP Address (example: 172.30.31.150)
 - Port: 22
 - Connection Type: SSH
-![[putty.png]]
+
+![](screenshoot/putty.png)
+
 ### Login
 - Username: Ubuntu user account
 - Password: VM password
-![[login.png]]
----
+
+![](screenshoot/login.png)
 
 ---
 
@@ -108,8 +118,6 @@ After installation, Wazuh services can be controlled using systemctl.
 	sudo systemctl status wazuh-indexer
 	sudo systemctl status wazuh-dashboard
 
-
-
 ---
 
 ### Start Services
@@ -117,8 +125,6 @@ After installation, Wazuh services can be controlled using systemctl.
 	sudo systemctl start wazuh-manager
 	sudo systemctl start wazuh-indexer
 	sudo systemctl start wazuh-dashboard
-
-
 
 ---
 
@@ -128,8 +134,6 @@ After installation, Wazuh services can be controlled using systemctl.
 	sudo systemctl stop wazuh-indexer
 	sudo systemctl stop wazuh-dashboard
 
-
-
 ---
 
 ### Enable Services (Auto-start on boot)
@@ -138,8 +142,6 @@ After installation, Wazuh services can be controlled using systemctl.
 	sudo systemctl enable wazuh-indexer
 	sudo systemctl enable wazuh-dashboard
 
-
-
 ---
 
 ### Restart Services
@@ -147,8 +149,6 @@ After installation, Wazuh services can be controlled using systemctl.
 	sudo systemctl restart wazuh-manager
 	sudo systemctl restart wazuh-indexer
 	sudo systemctl restart wazuh-dashboard
-
-
 
 ---
 
@@ -160,8 +160,6 @@ After services are running, open a browser and go to:
 
 Example:
 	https://172.30.31.150
-
-
 
 ### Login Information
 - Username: admin  
