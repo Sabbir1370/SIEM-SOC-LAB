@@ -52,7 +52,6 @@ Note: Use carefully in investigations
 Purpose: Display file content  
 Example:
 cat /var/log/syslog  
-Screenshot: (Add here)
 
 ---
 
@@ -61,7 +60,6 @@ Purpose: View large files interactively
 Example:
 less /var/log/auth.log  
 Tip: Press / to search inside file  
-Screenshot: (Add here)
 
 ---
 
@@ -71,7 +69,6 @@ Example:
 head -n 20 auth.log  
 tail -f auth.log  
 Explanation: tail -f is used for real-time log monitoring  
-Screenshot: (Add here)
 
 ---
 
@@ -82,7 +79,6 @@ grep "failed" /var/log/auth.log
 Advanced:
 grep -i "error" syslog  
 Explanation: -i ignores case  
-Screenshot: (Add here)
 
 ---
 
@@ -91,7 +87,6 @@ Purpose: Process and extract data
 Example:
 awk '{print $1, $2, $3}' auth.log  
 Use: Extract timestamp or fields  
-Screenshot: (Add here)
 
 ---
 
@@ -99,7 +94,6 @@ Screenshot: (Add here)
 Purpose: Extract columns  
 Example:
 cut -d ' ' -f1 auth.log  
-Screenshot: (Add here)
 
 --------------------------------------------------
 
@@ -109,7 +103,6 @@ Screenshot: (Add here)
 Purpose: Show running processes  
 Example:
 ps aux  
-Screenshot: (Add here)
 
 ---
 
@@ -117,7 +110,6 @@ Screenshot: (Add here)
 Purpose: Real-time system monitoring  
 Example:
 top  
-Screenshot: (Add here)
 
 ---
 
@@ -125,7 +117,6 @@ Screenshot: (Add here)
 Purpose: Interactive process viewer  
 Example:
 htop  
-Screenshot: (Add here)
 
 ---
 
@@ -133,7 +124,6 @@ Screenshot: (Add here)
 Purpose: Stop a process  
 Example:
 kill -9 PID  
-Screenshot: (Add here)
 
 --------------------------------------------------
 
@@ -143,7 +133,6 @@ Screenshot: (Add here)
 Purpose: Show network interfaces  
 Example:
 ip a  
-Screenshot: (Add here)
 
 ---
 
@@ -157,7 +146,6 @@ u = UDP
 l = listening  
 n = numeric  
 p = process  
-Screenshot: (Add here)
 
 ---
 
@@ -165,7 +153,6 @@ Screenshot: (Add here)
 Purpose: Modern netstat replacement  
 Example:
 ss -tuln  
-Screenshot: (Add here)
 
 ---
 
@@ -173,7 +160,6 @@ Screenshot: (Add here)
 Purpose: Check connectivity  
 Example:
 ping google.com  
-Screenshot: (Add here)
 
 ---
 
@@ -181,7 +167,6 @@ Screenshot: (Add here)
 Purpose: Send web requests  
 Example:
 curl http://example.com  
-Screenshot: (Add here)
 
 --------------------------------------------------
 
@@ -191,7 +176,6 @@ Screenshot: (Add here)
 Purpose: Show current user  
 Example:
 whoami  
-Screenshot: (Add here)
 
 ---
 
@@ -199,7 +183,6 @@ Screenshot: (Add here)
 Purpose: Change file permissions  
 Example:
 chmod 755 script.sh  
-Screenshot: (Add here)
 
 ---
 
@@ -207,7 +190,6 @@ Screenshot: (Add here)
 Purpose: Change ownership  
 Example:
 chown user:user file.txt  
-Screenshot: (Add here)
 
 --------------------------------------------------
 
@@ -217,7 +199,6 @@ Screenshot: (Add here)
 Purpose: Check disk space  
 Example:
 df -h  
-Screenshot: (Add here)
 
 ---
 
@@ -225,7 +206,6 @@ Screenshot: (Add here)
 Purpose: Check directory size  
 Example:
 du -sh /var/log  
-Screenshot: (Add here)
 
 ---
 
@@ -233,7 +213,6 @@ Screenshot: (Add here)
 Purpose: System information  
 Example:
 uname -a  
-Screenshot: (Add here)
 
 --------------------------------------------------
 
@@ -243,7 +222,6 @@ Screenshot: (Add here)
 Purpose: View system logs  
 Example:
 journalctl -xe  
-Screenshot: (Add here)
 
 ---
 
@@ -252,7 +230,6 @@ Purpose: Show login history
 Example:
 last  
 Use: Detect suspicious login activity  
-Screenshot: (Add here)
 
 ---
 
@@ -261,7 +238,6 @@ Purpose: Show command history
 Example:
 history  
 Use: Track user activity  
-Screenshot: (Add here)
 
 ---
 
@@ -269,7 +245,6 @@ Screenshot: (Add here)
 Purpose: Search files  
 Example:
 find / -name "*.log"  
-Screenshot: (Add here)
 
 --------------------------------------------------
 
