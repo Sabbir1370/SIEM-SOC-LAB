@@ -10,7 +10,6 @@ Purpose: List files and directories
 Example:
 ls -la 
 Explanation: Shows all files including hidden ones in detailed format  
-![[ls.png]]
 
 ---
 
@@ -19,21 +18,20 @@ Purpose: Change directory
 Example:
 cd /var/log  
 Explanation: Move into log directory  
-![[cd.png]]
+
 ---
 
 ### cp
 Purpose: Copy files  
 Example:
 cp auth.log backup_auth.log  
-![[cp.png]]
+
 ---
 
 ### mv
 Purpose: Move or rename files  
 Example:
 mv old.log new.log  
-![[mv.png]]
 
 ---
 
@@ -42,7 +40,6 @@ Purpose: Remove files
 Example:
 rm suspicious_file.sh  
 Note: Use carefully in investigations  
-![[rm.png]]
 
 --------------------------------------------------
 
